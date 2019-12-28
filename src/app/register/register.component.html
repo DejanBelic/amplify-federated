@@ -1,0 +1,14 @@
+<button class="ui button" (click)="facebook()"> Facebook</button>
+
+
+<form class="ui form" style="max-width: 400px" #login="ngForm" >
+
+
+  <input class="ui input"  type="text" name="username" placeholder="username" ngModel>
+  <input  class="ui input"  type="password" name="password" placeholder="password" ngModel>
+
+  <input *ngIf="codeField" class="ui input" type="text" placeholder="verification code" name="code" ngModel>
+
+  <button class="ui button" type="button" (click)="register(login.value)">Register</button>
+  <button class="ui button" type="button" (click)="confirm(login.value)">Confirm registration</button>
+</form>

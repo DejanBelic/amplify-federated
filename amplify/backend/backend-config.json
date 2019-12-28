@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"ampawstask87660475": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}
